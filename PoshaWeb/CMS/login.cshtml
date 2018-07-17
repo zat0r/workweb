@@ -1,0 +1,66 @@
+﻿@using System.Web.Security;
+
+
+<!DOCTYPE html>
+<html lang="en">
+    
+
+<!-- Mirrored from wrappixel.com/demos/free-admin-templates/matrix-admin/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jul 2018 12:14:26 GMT -->
+<head>
+        <title>Matrix Admin</title><meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="src/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="src/css/bootstrap-responsive.min.css" />
+        <link rel="stylesheet" href="src/css/matrix-login.css" />
+        <link href="src/font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+    </head>
+<body>
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+    <div id="loginbox">
+        <form id="loginform" class="form-vertical" action="http://wrappixel.com/demos/free-admin-templates/matrix-admin/index.html">
+            <div class="control-group normal_text"><h3>تسجيل الدخول</h3></div>
+            <div class="control-group">
+                <div class="controls">
+                    <div class="main_input_box">
+                        <span class="add-on bg_lg"><i class="icon-user"> </i></span><input type="text" placeholder="أسم المستخدم" />
+                    </div>
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="controls">
+                    <div class="main_input_box">
+                        <span class="add-on bg_ly"><i class="icon-lock"></i></span><input type="password" placeholder="كلمة المرور" />
+                    </div>
+                </div>
+            </div>
+            <div class="form-actions">
+                <span class="pull-left"><a href="#" class="flip-link btn btn-info" id="to-recover">نسيت كلمة السر؟</a></span>
+                <span class="pull-right"><a type="submit" href="index.cshtml" class="btn btn-success" />تسجيل الدخول</a></span>
+            </div>
+        </form>
+        <form id="recoverform" action="#" class="form-vertical">
+            <p class="normal_text">ضع البريد الإلكتروني الخاص بك في الأسفل لكي يتم إرسال رابط أعادة التعين إليك</p>
+
+            <div class="controls">
+                <div class="main_input_box">
+                    <span class="add-on bg_lo"><i class="icon-envelope"></i></span><input type="text" placeholder="البريد الألكتروني" />
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <span class="pull-left"><a href="#" class="flip-link btn btn-success" id="to-login">&laquo; العودة إلى صفحة الدخول</a></span>
+                <span class="pull-right"><a class="btn btn-info" />إرسال</a></span>
+            </div>
+        </form>
+    </div>
+
+    <script src="src/js/jquery.min.js"></script>
+    <script src="src/js/matrix.login.js"></script>
+</body>
+
+
+<!-- Mirrored from wrappixel.com/demos/free-admin-templates/matrix-admin/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jul 2018 12:14:27 GMT -->
+</html>

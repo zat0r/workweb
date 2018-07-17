@@ -1,0 +1,80 @@
+﻿@using WebMatrix.Data;
+@{
+    Layout = "Layout.cshtml";
+
+
+    var customerEmail = Request["SupEmail"];
+    var errorMessage = "";
+    var debuggingFlag = false;
+
+
+    var db = Database.Open("MyPoshDB");
+    var addcom = "INSERT INTO [table] (Email) " + "VALUES (@0)";
+    db.Execute(addcom, customerEmail);
+
+
+    string MassageBody = System.IO.File.ReadAllText(HttpContext.Current.Server.MapPath("EmailTemplet/SupMail.html"));
+
+    try
+    {
+        WebMail.Send(to: customerEmail,
+            subject: "تم الإشتراك في قناة الأخبار الخاص بمعهد السلامة",
+            isBodyHtml: true,
+            body: MassageBody
+        );
+    }
+    catch (Exception ex)
+    {
+        errorMessage = ex.Message;
+    }
+}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>إشتراك في قناة الأخبار</title>
+</head>
+<body>
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+        .pCAP {
+            text-align: center;
+            font-size: 40px;
+        }
+    </style>
+    @if (errorMessage == "")
+    {
+        <h2>
+            لقد تم الإشتراك في قناة الأخبار بنجاح
+        </h2>
+        <p class="pCAP">
+            <b>@customerEmail</b>
+        </p>
+
+    }
+    else
+    {
+        <h2>
+            <b>حصل خطأ ما..</b>
+        </h2>
+        <p>
+            نأسف على أزعاجكم
+        </p>
+        <p class="class=" pCAP"">
+            <b>@customerEmail</b>
+        </p>
+        if (debuggingFlag)
+        {
+            <p>The following error was reported:</p>
+            <p>
+                <em>@errorMessage</em>
+            </p>
+        }
+
+    }
+</body>
+</html>
+

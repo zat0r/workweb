@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Page.Title - Posha</title>
+    <meta name="description" content="معهد تدريب سلامة المشاريع" />
+    <meta name="keywords" content="معهد, سلامة, مشاريع, المشاريع, السلامة ,الأمن ,بوشا ,Posha" />
+    <meta name="author" content="ahmad zaaterah" />
+
+
+    <link rel="stylesheet" href="~/src/css/animate.css">
+    <link rel="stylesheet" href="~/src/css/icomoon.css">
+    <link rel="stylesheet" href="~/src/css/bootstrap.css">
+    <link rel="stylesheet" href="~/src/css/magnific-popup.css">
+    <link rel="stylesheet" href="~/src/css/style.css">
+    <link rel='stylesheet' href='~/src/css/ClockAnimation.css'>
+    <script src="~/src/js/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+    <div class="fh5co-loader"></div>
+
+    <div id="page">
+        <nav class="fh5co-nav" role="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-10 text-left menu-1">
+                        <ul>
+                            <li><a href="~/Default.cshtml">الرئيسية</a></li>
+                            <li class="has-dropdown @Page.About">
+                                <a href="~/About.cshtml">من نحن</a><ul class="dropdown">
+                                    <li class="@Page.Accre"><a href="~/accreditation.cshtml">للإعتمادات</a></li>
+                                    <li class="@Page.Galary"><a href="~/PicGalary.cshtml">معرض الصور</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown @Page.Train">
+                                <a href="~/Training.cshtml">برامجنا التدريبية</a>
+                                <ul class="dropdown" style="width:280px">
+                                    <li class="@Page.Dip"><a href="~/Training/Diploma.cshtml">دبلوم السلامة و الصحة المهنية</a></li>
+                                    <li class="@Page.traintetch"><a href="~/Training/trainingtrainar.cshtml">تدريب مدربي السلامة والصحة مهنية</a></li>
+                                    <li class="@Page.EngSafty"><a href="~/Training/EngSafty.cshtml">برنامج السلامة الهندسية</a></li>
+                                    <li class="@Page.PoshG"><a href="~/Training/PoshaGroup.cshtml">مجموعة بوشا</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="products.html">حلول الأعمال</a>
+                                <ul class="dropdown">
+                                    <li><a href="~/consultation.cshtml">الإستشارات</a></li>
+                                    <li><a href="#">توطين الوظائف</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="add-regestrtion" href="~/CMS/registration.cshtml">سجل معنا</a></li>
+                            <li><a class="add-regestrtion2" href="~/CMS/login.cshtml">تسجيل الدخول</a></li>
+                            <li><a href="contact.html">تواصل معنا</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-xs-2 text-right">
+                        <div id="fh5co-logo"><a href="~/Default.cshtml">POSHA<span>.</span></a></div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+        <header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(src/images/Main-bg.jpg);" data-stellar-background-ratio="0.5">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-right">
+                        <div class="display-t">
+                            <div class="display-tc animate-box" data-animate-effect="fadeInUp">
+                                <h1 class="mb30">@Page.Name</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        @RenderBody()
+        <footer id="fh5co-footer" role="contentinfo">
+            <div class="container">
+                <div class="row row-pb-md">
+                    <div class="col-md-4 fh5co-widget text-right rtl">
+                        <h3>POSHA.</h3>
+                        <p>
+                            بوشا اكاديمية محلية ودولية تعمل في مجال الصحة والسلامة المهنية لتخريج مشرفي صحة وسلامة مهنية قادرين على وضع الأسس والأنظمة والتعليمات بناء على معايير محلية ودولية من اجل توعية وتدريب وتطوير ثقافة السلامة لديهم وهذه العناصر هي اساس لخلق بيئة آمنة خالية من المخاطر وتعمل على المحافظة على حياة الإنسان وممتلكاته.
+                        </p>
+                        <p><a href="#">إقرأ المزيد</a></p>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 ">
+                        <ul class="fh5co-footer-links">
+                            <p>الرئيسية</p>
+                            <li><a href="#">من نحن</a></li>
+                            <li><a href="#">برامجنا التدريبية</a></li>
+                            <li><a href="#">حلول الأعمال</a></li>
+                            <li><a href="#">تواصل معنا</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 ">
+                        <ul class="fh5co-footer-links">
+                            <p>الدورات</p>
+                            <li><a href="#">دبلوم السلامة والصحة المهنية</a></li>
+                            <li><a href="#">دبلوم السلامة الهندسية</a></li>
+                            <li><a href="#">دورة إعداد مدربي السلامة</a></li>
+                            <li><a href="#">بوشا</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 ">
+                        <ul class="fh5co-footer-links">
+                            <p>مواقع التواصل</p>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">twitter</a></li>
+                            <li><a href="#">linkedin</a></li>
+                            <li><a href="#">youtube</a></li>
+                            <li><a href="#">API</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row copyright">
+                    <div class="col-md-12 text-center">
+                        <p>
+                            <small class="block">&copy; @DateTime.Now.Year جميع الحقوق محفوظة لمعهد سلامة المشاريع العالي للتدريب</small>
+                        </p>
+                        <p>
+                            <ul class="fh5co-social-icons">
+                                <li><a href="#"><i class="icon-twitter"></i></a></li>
+                                <li><a href="#"><i class="icon-facebook"></i></a></li>
+                                <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                                <li><a href="#"><i class="icon-dribbble"></i></a></li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+    </div>
+
+    <!-- jQuery -->
+    <script src="~/src/js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="~/src/js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="~/src/js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="~/src/js/jquery.waypoints.min.js"></script>
+    <!-- countTo -->
+    <script src="~/src/js/jquery.countTo.js"></script>
+    <!-- Magnific Popup -->
+    <script src="~/src/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/src/js/magnific-popup-options.js"></script>
+    <!-- Stellar -->
+    <script src="~/src/js/jquery.stellar.min.js"></script>
+    <script src="~/src/js/slick.min.js"></script>
+    <!-- Main -->
+    <script src="~/src/js/main.js"></script>
+</body>
+</html>

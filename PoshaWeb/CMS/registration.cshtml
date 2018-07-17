@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    
+
+<!-- Mirrored from wrappixel.com/demos/free-admin-templates/matrix-admin/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jul 2018 12:14:26 GMT -->
+<head>
+        <title>تسجيل الدخول</title><meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="src/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="src/css/bootstrap-responsive.min.css" />
+        <link rel="stylesheet" href="src/css/matrix-login.css" />
+        <link href="src/font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+    </head>
+<body>
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+    <div id="loginbox">
+        <form id="loginform" class="form-vertical" action="">
+            <div class="control-group normal_text"> <h3>التسجيل</h3></div>
+            <div class="control-group">
+                <div class="controls">
+                    <div class="main_input_box">
+                        <span class="add-on bg_lg"><i class="icon-user"> </i></span><input type="text" placeholder="الأسم" />
+                    </div>
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="controls">
+                    <div class="main_input_box">
+                        <span class="add-on bg_lh"><i class="icon-phone"></i></span><input type="number" max="9999999999" placeholder="رقم الهاتف" />
+                    </div>
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="controls">
+                    <div class="main_input_box">
+                        <span class="add-on bg_ls"><i class="icon-envelope"></i></span><input type="email" placeholder="البريد الإلكتروني" />
+                    </div>
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="controls">
+                    <div class="main_input_box">
+                        <p>العمر</p>
+                        <span class="add-on bg_lv"><i class=" icon-calendar"></i></span><input type="Date" placeholder="العمر" />
+                    </div>
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="controls">
+                    <div class="main_input_box">
+                        <span class="add-on bg_ly">
+                            <i class="icon-edit"></i>
+                        </span>
+                        <select name="country">
+                            <option value="none" selected="" disabled="">الدورة المراد التسجيل بها</option>
+                            <option value="Ph">الدبلوم</option>
+                            <option value="Po">دورة السلامة</option>
+                            <option value="So">دورة تدريب المدربين</option>
+                            <option value="Sp">دورة بوشا1</option>
+                            <option value="Sw">دورة بوشا2</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="control-group">
+                <div style="margin-bottom:50px" class="controls">
+                    <div class="main_input_box pull-right">
+                        <p>صورة من شهادة الثانوية</p>
+                        <span class="add-on bg_lg"><i class="icon-folder-close"></i></span><label class="custom-file-upload"><input type="file" />إرفع الملف</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-actions">
+                <span class="pull-Right"><a href="#" class="flip-link btn btn-info" id="to-recover">التسجيل</a></span>
+            </div>
+        </form>
+        <form id="recoverform" action="#" class="form-vertical">
+            <p class="normal_text">شكرا على تسجيلكم معنا سةف ستم التواصل معكم في أقرب فرصه ممكنة</p>
+            <p class="normal_text">إشترك معنا في قائمة الأخبار لكي يصلك كل جديد</p>
+            <div class="controls">
+                <div class="main_input_box">
+                    <span class="add-on bg_lo"><i class="icon-envelope"></i></span><input type="text" placeholder="ضع البريد الإلكتروني هنا" />
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <span class="pull-left"><a href="#" class="flip-link btn btn-success" id="to-login">&laquo; العودة إلى الموقع الرئيسي</a></span>
+                <span class="pull-right"><a class="btn btn-info" />الإشتراك</a></span>
+            </div>
+        </form>
+    </div>
+
+    <script src="src/js/jquery.min.js"></script>
+    <script src="src/js/matrix.login.js"></script>
+</body>
+
+
+<!-- Mirrored from wrappixel.com/demos/free-admin-templates/matrix-admin/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jul 2018 12:14:27 GMT -->
+</html>
