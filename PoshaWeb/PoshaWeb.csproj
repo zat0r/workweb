@@ -256,6 +256,7 @@
     <Content Include="CMS\src\font-awesome\font\fontawesome-webfontd41d.eot" />
     <Content Include="CMS\Layout.cshtml" />
     <Content Include="consultation.cshtml" />
+    <Content Include="Contact.cshtml" />
     <None Include="packages.config" />
     <Content Include="src\fonts\bootstrap\glyphicons-halflings-regular.eot" />
     <Content Include="src\fonts\bootstrap\glyphicons-halflings-regular.ttf" />
@@ -351,6 +352,7 @@
     <Content Include="Training\Posha2.cshtml" />
     <Content Include="Training\Posha3.cshtml" />
     <Content Include="Training\Posha4.cshtml" />
+    <Content Include="Tatween.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
