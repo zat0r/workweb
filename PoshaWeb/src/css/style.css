@@ -1912,6 +1912,9 @@ tr:nth-child(even) {
 .fh5co-selected blockquote h2 {
     color: #fff;
 }
+.feature-center div img {
+    width:100%;
+}
 
 
 

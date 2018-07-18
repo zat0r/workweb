@@ -257,6 +257,7 @@
     <Content Include="CMS\Layout.cshtml" />
     <Content Include="consultation.cshtml" />
     <Content Include="Contact.cshtml" />
+    <Content Include="CMS\Soon.cshtml" />
     <None Include="packages.config" />
     <Content Include="src\fonts\bootstrap\glyphicons-halflings-regular.eot" />
     <Content Include="src\fonts\bootstrap\glyphicons-halflings-regular.ttf" />
@@ -353,6 +354,8 @@
     <Content Include="Training\Posha3.cshtml" />
     <Content Include="Training\Posha4.cshtml" />
     <Content Include="Tatween.cshtml" />
+    <Content Include="Terms.cshtml" />
+    <Content Include="CMS\temregistration.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
