@@ -1908,6 +1908,10 @@ tr:nth-child(even) {
 .bg-white {
     background: white;
 }
+.fh5co-selected blockquote ul li,
+.fh5co-selected blockquote h2 {
+    color: #fff;
+}
 
 
 
